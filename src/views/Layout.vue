@@ -3,7 +3,7 @@
     <!-- 侧边栏 -->
     <el-aside :width="isCollapse ? '64px' : '220px'" class="aside">
       <div class="logo">
-        <img src="@/assets/logo.png" alt="Logo" v-if="!isCollapse" />
+        <el-icon v-if="!isCollapse" style="font-size: 24px; margin-right: 8px"><DataAnalysis /></el-icon>
         <span v-if="!isCollapse">业财一体化</span>
       </div>
       <el-menu
